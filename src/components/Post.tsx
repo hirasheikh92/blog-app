@@ -1,17 +1,13 @@
 import React, { JSX } from "react";
 import Link from "next/link";
+import { PostProps } from "@/lib/definition";
 
 export default function Post({
   id,
   title,
   content,
   date,
-}: {
-  id: string;
-  title: string;
-  content: string;
-  date: string;
-}): JSX.Element {
+}: PostProps) : JSX.Element {
   return (
     <div key={id} className="border border-gray-200 p-4 my-4">
       <Link href={`/blog/post/${id}`}>

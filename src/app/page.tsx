@@ -1,6 +1,8 @@
+
 import Link from "next/link";
 
-export default function Home() {
+export default  function Home() {
+ 
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-50">
       <div className="container mx-auto p-4 relative">
